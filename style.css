@@ -1,0 +1,462 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+    background:darkgreen;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    font-size:36px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:22px;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:65px;
+    color:white;
+}
+
+.hero p{
+    font-size:28px;
+    margin:20px 0;
+}
+
+button{
+    background:darkgreen;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    font-size:22px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:green;
+}
+
+/* Courses */
+
+.courses{
+    text-align:center;
+    padding:60px 20px;
+    background:white;
+}
+
+.courses h2{
+    color:darkgreen;
+    font-size:42px;
+}
+
+.course-box{
+    background:#f4f4f4;
+    margin:20px auto;
+    padding:20px;
+    width:70%;
+    border-radius:10px;
+}
+
+/* About */
+
+.about{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.about h2{
+    color:darkgreen;
+    font-size:42px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* Footer */
+
+footer{
+    background:darkgreen;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+.contact{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.contact h2{
+    font-size:50px;
+    color:darkgreen;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:22px;
+    margin:15px 0;
+}
+
+.contact button{
+    margin-top:25px;
+}
+.testimonials{
+    padding:70px 20px;
+    background:#ffffff;
+    text-align:center;
+}
+
+.testimonials h2{
+    font-size:45px;
+    color:darkgreen;
+    margin-bottom:40px;
+}
+
+.testimonial-box{
+    background:#f4f4f4;
+    width:70%;
+    margin:20px auto;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-box p{
+    font-size:20px;
+    line-height:1.6;
+}
+
+.testimonial-box h4{
+    margin-top:15px;
+    color:darkgreen;
+}
+.faq{
+    padding:70px 20px;
+    background:#f7f7f7;
+    text-align:center;
+}
+
+.faq h2{
+    font-size:45px;
+    color:darkgreen;
+    margin-bottom:40px;
+}
+
+.faq-box{
+    width:80%;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:left;
+}
+
+.faq-box h3{
+    color:darkgreen;
+    margin-bottom:10px;
+}
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp:hover{
+    background:#128C7E;
+}
+.stats{
+    background:#006400;
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.stats h2{
+    font-size:45px;
+    margin-bottom:40px;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:white;
+    color:#006400;
+    width:220px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.stat-box h3{
+    font-size:42px;
+}
+
+.stat-box p{
+    font-size:20px;
+    margin-top:10px;
+}
+/* Gallery Section */
+
+.gallery{
+    padding:70px 20px;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:42px;
+    color:darkgreen;
+    margin-bottom:40px;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+.contact-form{
+    width:80%;
+    max-width:600px;
+    margin:30px auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:18px;
+}
+
+.contact-form button{
+    width:100%;
+    background:darkgreen;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+
+    position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.contact-form button:hover{
+    background:green;
+}
+/* ===========================
+   Mobile Responsive Design
+=========================== */
+
+@media (max-width:768px)
+
+
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.logo{
+    font-size:28px;
+}
+
+.course-box,
+.testimonial-box,
+.faq-box,
+.stat-box,
+.why-box{
+    width:90%;
+    margin:15px auto;
+}
+
+.teacher img{
+    width:170px;
+    height:170px;
+}
+
+.about p,
+.teacher p{
+    width:90%;
+    font-size:18px;
+}
+
+.stats-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.gallery-container{
+    grid-template-columns:1fr;
+}
+/* Website Loader */
+
+#loader{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.spinner{
+    width:70px;
+    height:70px;
+    border:8px solid #ddd;
+    border-top:8px solid darkgreen;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+/* Dark Mode Button */
+
+#darkModeBtn{
+    padding:10px 15px;
+    background:gold;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark-mode header{
+    background:#000;
+}
+
+.dark-mode footer{
+    background:#000;
+}
+
+.dark-mode .course-box,
+.dark-mode .why-box,
+.dark-mode .testimonial-box,
+.dark-mode .faq-box,
+.dark-mode .stat-box{
+    background:#2d2d2d;
+    color:white;
+}
+/* Social Icons */
+
+.social-icons{
+    margin:20px 0;
+}
+
+.social-icons a{
+    display:inline-block;
+    width:45px;
+    height:45px;
+    line-height:45px;
+    margin:0 10px;
+    border-radius:50%;
+    background:darkgreen;
+    color:white;
+    text-align:center;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    background:gold;
+    color:black;
+    transform:scale(1.1);
+}
