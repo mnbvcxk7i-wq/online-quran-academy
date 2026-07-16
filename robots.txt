@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mnbvcxk7i-wq.github.io/online-quran-academy/sitemap.xml
